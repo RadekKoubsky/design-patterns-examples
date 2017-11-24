@@ -1,6 +1,6 @@
-package org.rkoubsky.examples.designpatterns.behavioral.observer.subject;
+package org.rkoubsky.examples.designpatterns.behavioral.observer.standard.impl.push.subject;
 
-import org.rkoubsky.examples.designpatterns.behavioral.observer.observers.Observer;
+import org.rkoubsky.examples.designpatterns.behavioral.observer.standard.impl.push.observers.Observer;
 
 import java.util.LinkedList;
 import java.util.List;

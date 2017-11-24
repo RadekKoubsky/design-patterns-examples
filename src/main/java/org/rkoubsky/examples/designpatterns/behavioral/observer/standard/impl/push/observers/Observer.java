@@ -1,4 +1,4 @@
-package org.rkoubsky.examples.designpatterns.behavioral.observer.observers;
+package org.rkoubsky.examples.designpatterns.behavioral.observer.standard.impl.push.observers;
 
 /**
  * @author Radek Koubsky (radekkoubsky@gmail.com)

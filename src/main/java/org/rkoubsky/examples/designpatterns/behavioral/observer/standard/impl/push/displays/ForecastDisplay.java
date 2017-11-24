@@ -1,8 +1,7 @@
-package org.rkoubsky.examples.designpatterns.behavioral.observer.displays;
+package org.rkoubsky.examples.designpatterns.behavioral.observer.standard.impl.push.displays;
 
-import org.rkoubsky.examples.designpatterns.behavioral.observer.observers.Observer;
-import org.rkoubsky.examples.designpatterns.behavioral.observer.subject.Subject;
-import org.rkoubsky.examples.designpatterns.behavioral.observer.subject.WeatherData;
+import org.rkoubsky.examples.designpatterns.behavioral.observer.standard.impl.push.observers.Observer;
+import org.rkoubsky.examples.designpatterns.behavioral.observer.standard.impl.push.subject.Subject;
 
 /**
  * @author Radek Koubsky (radekkoubsky@gmail.com)
