@@ -19,6 +19,11 @@ public class LightOnCommand implements Command {
 
     @Override
     public void execute() {
-        light.on();
+        this.light.on();
+    }
+
+    @Override
+    public void undo() {
+        this.light.off();
     }
 }

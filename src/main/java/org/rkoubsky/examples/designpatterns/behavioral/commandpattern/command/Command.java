@@ -7,4 +7,6 @@ package org.rkoubsky.examples.designpatterns.behavioral.commandpattern.command;
  */
 public interface Command {
     void execute();
+
+    void undo();
 }

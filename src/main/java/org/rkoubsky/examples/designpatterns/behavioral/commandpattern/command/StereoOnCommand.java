@@ -20,4 +20,9 @@ public class StereoOnCommand implements Command {
     public void execute() {
         this.stereo.on();
     }
+
+    @Override
+    public void undo() {
+        this.stereo.off();
+    }
 }
