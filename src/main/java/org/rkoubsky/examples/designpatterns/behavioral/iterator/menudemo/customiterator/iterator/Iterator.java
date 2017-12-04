@@ -1,4 +1,4 @@
-package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.iterator;
+package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.iterator;
 
 /**
  * @author Radek Koubsky (radekkoubsky@gmail.com)

@@ -1,7 +1,7 @@
-package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.menu;
+package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.menu;
 
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.iterator.DinerMenuIterator;
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.iterator.Iterator;
+import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.iterator.DinerMenuIterator;
+import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.iterator.Iterator;
 
 import java.math.BigDecimal;
 

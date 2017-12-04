@@ -3,7 +3,6 @@
  * subclasses. Template Method lets subclasses redefine certain steps of an algorithm without
  * changing the algorithm's structure.
  * <p>
- * <p>
  * The Hollywood Principle:
  * </p>
  * <p>

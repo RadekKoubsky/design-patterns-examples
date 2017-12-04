@@ -1,9 +1,9 @@
-package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo;
+package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator;
 
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.iterator.Iterator;
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.menu.DinerMenu;
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.menu.MenuItem;
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.menu.PancakeHouseMenu;
+import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.iterator.Iterator;
+import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.menu.DinerMenu;
+import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.menu.MenuItem;
+import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.menu.PancakeHouseMenu;
 
 /**
  * @author Radek Koubsky (radekkoubsky@gmail.com)

@@ -1,15 +1,20 @@
-package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.menu;
-
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.iterator.Iterator;
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.iterator.PancakeHouseMenuIterator;
+package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.javautiliterator.menu;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
+ * The ConcreteAggregate has a collection of objects and implements
+ * the method that returns an Iterator for its Collection.
+ * <p>
+ * Each ConcreteAggregate is responsible for instantiating a ConcreteIterator
+ * ({@link ArrayList.Itr}) that can iterate over its collection of objects.
+ * </p>
+ *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
     private final ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
 
     public PancakeHouseMenu() {
@@ -27,7 +32,8 @@ public class PancakeHouseMenu {
         this.menuItems.add(menuItem);
     }
 
-    public Iterator<MenuItem> iterator() {
-        return new PancakeHouseMenuIterator(this.menuItems);
+    @Override
+    public Iterator<MenuItem> createIterator() {
+        return this.menuItems.iterator();
     }
 }

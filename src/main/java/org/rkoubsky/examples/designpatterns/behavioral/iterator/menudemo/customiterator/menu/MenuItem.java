@@ -1,4 +1,4 @@
-package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.menu;
+package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.menu;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,6 @@
-package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.iterator;
+package org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.iterator;
 
-import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.menu.MenuItem;
+import org.rkoubsky.examples.designpatterns.behavioral.iterator.menudemo.customiterator.menu.MenuItem;
 
 /**
  * @author Radek Koubsky (radekkoubsky@gmail.com)
