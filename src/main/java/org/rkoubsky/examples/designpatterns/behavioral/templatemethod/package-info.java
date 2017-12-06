@@ -8,6 +8,10 @@
  * <p>
  * Don't call us, we will call you.
  * </p>
+ * <p>Comparison with other patterns:</p>
+ * <p>The Strategy Pattern and Template Pattern both encapsulate algorithms, one
+ * by composition and one by inheritance.</p>
+ * <p>The Factory Method is a specialization of Template Method</p>
  *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
