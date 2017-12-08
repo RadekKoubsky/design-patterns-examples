@@ -8,6 +8,11 @@ import java.rmi.RemoteException;
 /**
  * This is the remote service that is registered to the RMI {@link java.rmi.registry.Registry}
  * and can be looked up over the network.
+ * <p>
+ * Represents a Subject. Both Proxy and the RealSubject ({@link GumballMachine})
+ * implement the Subject interface. This allows any client to treat the proxy
+ * just like the RealSubject.
+ * </p>
  *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */

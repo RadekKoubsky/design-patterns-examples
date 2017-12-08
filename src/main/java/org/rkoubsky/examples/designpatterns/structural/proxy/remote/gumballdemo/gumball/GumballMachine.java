@@ -15,6 +15,11 @@ import java.rmi.server.UnicastRemoteObject;
  * in order to have the ability to act as a remote service.
  * <p>
  * It also needs to implement the remote interface {@link GumballMachineRemote}
+ * </p>
+ * <p>
+ * A RealSubject. It is usually the object that does most of the real work;
+ * the Proxy controls access to it.
+ * </p>
  *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
