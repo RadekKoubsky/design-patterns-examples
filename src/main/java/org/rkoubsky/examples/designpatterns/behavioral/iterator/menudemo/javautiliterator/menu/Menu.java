@@ -10,5 +10,5 @@ import java.util.Iterator;
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
 public interface Menu {
-    public Iterator createIterator();
+    public Iterator<MenuItem> createIterator();
 }
