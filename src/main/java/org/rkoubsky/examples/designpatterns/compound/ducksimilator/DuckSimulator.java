@@ -4,6 +4,7 @@ import org.rkoubsky.examples.designpatterns.compound.ducksimilator.abstractfacto
 import org.rkoubsky.examples.designpatterns.compound.ducksimilator.abstractfactory.CountingDuckFactory;
 import org.rkoubsky.examples.designpatterns.compound.ducksimilator.composite.Flock;
 import org.rkoubsky.examples.designpatterns.compound.ducksimilator.decorator.QuackCounter;
+import org.rkoubsky.examples.designpatterns.compound.ducksimilator.observer.Quackologist;
 
 /**
  * @author Radek Koubsky (radekkoubsky@gmail.com)
@@ -44,6 +45,10 @@ public class DuckSimulator {
 
         System.out.println("\nDuck Simulator: Mallard Flock Simulation");
         simulate(flockOfMallards);
+
+        System.out.println("\nDuck Simulator With Observer");
+        flockOfDucks.registerObserver(new Quackologist());
+        simulate(flockOfDucks);
 
         System.out.printf("The ducks quacked %s times.", QuackCounter.getNumberOfQuacks());
     }

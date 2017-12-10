@@ -1,6 +1,7 @@
 package org.rkoubsky.examples.designpatterns.compound.ducksimilator.composite;
 
 import org.rkoubsky.examples.designpatterns.compound.ducksimilator.Quackable;
+import org.rkoubsky.examples.designpatterns.compound.ducksimilator.observer.Observer;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -25,5 +26,19 @@ public class Flock implements Quackable {
     @Override
     public void quack() {
         this.quackers.forEach(Quackable::quack);
+    }
+
+    @Override
+    public void registerObserver(final Observer observer) {
+        this.quackers.forEach(quacker -> quacker.registerObserver(observer));
+    }
+
+    /**
+     * Each {@link Quackable} does it own notification, thus {@link Flock} does
+     * not have to worry about it. This happens when the Flock delegates quack()
+     * to each Quackable in the flock, see {@link Flock#quack()}.
+     */
+    @Override
+    public void notifyObservers() {
     }
 }
