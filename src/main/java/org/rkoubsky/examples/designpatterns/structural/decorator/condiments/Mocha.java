@@ -6,6 +6,9 @@ import org.rkoubsky.examples.designpatterns.structural.decorator.beverages.Size;
 import java.math.BigDecimal;
 
 /**
+ * The ConcreteDecorator has an instance variable for the thing it decorates;
+ * the Component ({@link Beverage}) the Decorator ({@link CondimentDecorator}) wraps.
+ *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
 public class Mocha extends CondimentDecorator {

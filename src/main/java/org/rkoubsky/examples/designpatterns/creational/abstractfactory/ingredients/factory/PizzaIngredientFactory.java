@@ -12,6 +12,11 @@ import java.util.List;
 /**
  * The Abstract Factory defines the interface that all concrete factories
  * must implement, which consists of a set of methods for producing products.
+ * <p>
+ * <p>
+ * Methods to create products in an Abstract Factory are often
+ * implemented with a Factory Method.
+ * </p>
  *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */

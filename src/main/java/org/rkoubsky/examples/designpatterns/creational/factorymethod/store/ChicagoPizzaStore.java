@@ -9,6 +9,11 @@ import org.rkoubsky.examples.designpatterns.creational.factorymethod.pizza.chica
 /**
  * The concrete creator implements the factory method,
  * which is the method that actually produces products.
+ * <p>
+ * The ConcreteCreator is responsible for creating one or more
+ * concrete products. It is the only class that has the knowledge
+ * how to create these products.
+ * </p>
  *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */

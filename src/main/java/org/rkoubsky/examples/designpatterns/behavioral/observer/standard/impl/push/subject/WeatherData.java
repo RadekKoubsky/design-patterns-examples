@@ -6,6 +6,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * A ConcreteSubject always implements the Subject ({@link Subject}) interface.
+ * In addition to the register and remove methods, the concrete subject implements
+ * a {@link Subject#notifyObservers()} method that is used to update all
+ * the current observers whenever state changes.
+ *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
 public class WeatherData implements Subject {
@@ -19,25 +24,25 @@ public class WeatherData implements Subject {
     }
 
     @Override
-    public void registerObserver(Observer observer) {
-        observers.add(observer);
+    public void registerObserver(final Observer observer) {
+        this.observers.add(observer);
     }
 
     @Override
-    public void removeObserver(Observer observer) {
-        observers.remove(observer);
+    public void removeObserver(final Observer observer) {
+        this.observers.remove(observer);
     }
 
     @Override
     public void notifyObservers() {
-        observers.forEach(observer -> observer.update(temperature, humidity, pressure));
+        this.observers.forEach(observer -> observer.update(this.temperature, this.humidity, this.pressure));
     }
 
-    public void measurementChanged(){
+    public void measurementChanged() {
         notifyObservers();
     }
 
-    public void setMeasurements(float temp, float humidity, float pressure){
+    public void setMeasurements(final float temp, final float humidity, final float pressure) {
         this.temperature = temp;
         this.humidity = humidity;
         this.pressure = pressure;

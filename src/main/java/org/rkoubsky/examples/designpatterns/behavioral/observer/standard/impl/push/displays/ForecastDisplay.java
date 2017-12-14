@@ -9,26 +9,28 @@ import org.rkoubsky.examples.designpatterns.behavioral.observer.standard.impl.pu
 public class ForecastDisplay implements Observer, DisplayElement {
     private float currentPressure = 29.92f;
     private float lastPressure;
-    private Subject weatherData;
+    private final Subject weatherData;
 
-    public ForecastDisplay(Subject weatherData) {
+    public ForecastDisplay(final Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
-    public void update(float temp, float humidity, float pressure) {
-        lastPressure = currentPressure;
-        currentPressure = pressure;
+    @Override
+    public void update(final float temp, final float humidity, final float pressure) {
+        this.lastPressure = this.currentPressure;
+        this.currentPressure = pressure;
         display();
     }
 
+    @Override
     public void display() {
         System.out.print("Forecast: ");
-        if (currentPressure > lastPressure) {
+        if (this.currentPressure > this.lastPressure) {
             System.out.println("Improving weather on the way!");
-        } else if (currentPressure == lastPressure) {
+        } else if (this.currentPressure == this.lastPressure) {
             System.out.println("More of the same");
-        } else if (currentPressure < lastPressure) {
+        } else if (this.currentPressure < this.lastPressure) {
             System.out.println("Watch out for cooler, rainy weather");
         }
     }

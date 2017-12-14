@@ -4,6 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * A Product, all products must implement the same interface so that the classes
+ * which use the products can refer to the interface, not to the concrete classes.
+ *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
 public abstract class Pizza {
@@ -33,6 +36,6 @@ public abstract class Pizza {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 }

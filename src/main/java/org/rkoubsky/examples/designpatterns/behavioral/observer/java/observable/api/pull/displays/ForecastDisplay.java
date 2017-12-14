@@ -18,6 +18,11 @@ public class ForecastDisplay implements Observer, DisplayElement {
         observable.addObserver(this);
     }
 
+    /**
+     * We are passing the Observable object ({@link WeatherData}) and optional
+     * data argument. This approach is called Pull as the observers pull
+     * the state from the Observable/Subject.
+     */
     @Override
     public void update(final Observable obs, final Object arg) {
         if (obs instanceof WeatherData) {

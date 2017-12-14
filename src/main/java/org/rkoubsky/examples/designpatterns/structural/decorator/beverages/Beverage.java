@@ -3,6 +3,9 @@ package org.rkoubsky.examples.designpatterns.structural.decorator.beverages;
 import java.math.BigDecimal;
 
 /**
+ * A Component. Each component can be used on its own,
+ * or wrapped by a decorator.
+ *
  * @author Radek Koubsky (radekkoubsky@gmail.com)
  */
 public abstract class Beverage {
